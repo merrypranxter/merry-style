@@ -1,0 +1,120 @@
+style_lock_line: "Style: New Age Glam Fantasy — 1978–1986 metaphysical glam sci-fantasy, diffusion bloom/halation, prismatic pastels, VHS/CRT artifacts, analog film wear."
+
+short_prompt:
+  template: "{subject} in {setting}, {motifs}, {lighting}, {palette}, {optics}, {format}, Style: New Age Glam Fantasy — 1978–1986 metaphysical glam sci-fantasy, diffusion bloom/halation, prismatic pastels, VHS/CRT artifacts, analog film wear."
+  example:
+    subject: "A cosmic priestess"
+    setting: "a mirrored crystal temple above reflective black water"
+    motifs: "glowing mushrooms and crystal clusters"
+    lighting: "halo backlight through pink and teal mist"
+    palette: "hot pink violet aqua palette"
+    optics: "soft bloom and subtle VHS softness"
+    format: "framed as a lost fantasy film still"
+
+medium_prompt:
+  template: "{subject} in {setting}, surrounded by {motifs}, wearing {styling}, lit by {lighting}, rendered with {optics}, in {palette}, with {artifacts}, evoking {emotion}, composed as {format}. Style: New Age Glam Fantasy — 1978–1986 metaphysical glam sci-fantasy, diffusion bloom/halation, prismatic pastels, VHS/CRT artifacts, analog film wear."
+  example:
+    subject: "A radiant woman with long wild pink curls"
+    setting: "a mirrored crystal temple above reflective black water"
+    motifs: "glowing mushrooms, crystal clusters, and drifting prism flares"
+    styling: "an orchid satin gown with silver jewelry and chiffon veils"
+    lighting: "halo backlight through lavender and teal haze"
+    optics: "soft-focus glam optics"
+    palette: "Lisa Frank–adjacent hot pink, violet, aqua, lemon, and pearl palette"
+    artifacts: "faint CRT texture and chroma bleed"
+    emotion: "sacred glamour and cosmic initiation"
+    format: "a lost metaphysical paperback cover"
+
+long_prompt:
+  template: "{detailed_subject} in {detailed_setting}, surrounded by {detailed_motifs}, wearing {detailed_styling}, lit by {detailed_lighting}, rendered with {detailed_optics}, in {detailed_palette}, with {detailed_artifacts}, evoking {detailed_emotion}, composed as {detailed_format}. Style: New Age Glam Fantasy — 1978–1986 metaphysical glam sci-fantasy, diffusion bloom/halation, prismatic pastels, VHS/CRT artifacts, analog film wear."
+  example:
+    detailed_subject: "A luminous oracle with long wild pink curly hair stands barefoot on a ceremonial mirrored platform"
+    detailed_setting: "above reflective black water inside a vast crystal moon temple"
+    detailed_motifs: "giant quartz clusters, pastel mushrooms, velvet moss, floating butterflies, and soft fractal aura patterns radiating behind her"
+    detailed_styling: "a flowing hot pink and orchid satin gown with silver lamé trim, chiffon veils, crystal rings, satin gloves, glossy lips, frosted lavender eyeshadow, and a jeweled moon-crown headpiece"
+    detailed_lighting: "radiant halo backlight and candy-colored prism spill in teal, aqua, violet, and lemon glow"
+    detailed_optics: "heavy diffusion bloom, dreamy halation, mist-filled air, and pearlescent highlight rolloff"
+    detailed_palette: "Lisa Frank–adjacent high-chroma cosmic palette of bubblegum pink, magenta, orchid, turquoise, mint, lemon, pearl white, and silver"
+    detailed_artifacts: "subtle VHS softness, chroma bleed, faded print wear, and faint CRT scanline texture"
+    detailed_emotion: "sacred beauty, visionary longing, and glamorous spiritual initiation"
+    detailed_format: "a center-framed lost metaphysical paperback cover from an obscure 1983 fantasy media universe"
+
+subject_options:
+  - "A radiant oracle with long wild pink curly hair"
+  - "A cosmic priestess with blue eyes and luminous skin"
+  - "A moon queen with silver jewelry and flowing veils"
+  - "A crystal temple guardian with jeweled crown"
+  - "A mystical heroine with glossy lips and frosted eyeshadow"
+
+setting_options:
+  - "a mirrored crystal temple above reflective black water"
+  - "a moonlit garden filled with glowing moss and pastel mushrooms"
+  - "a cosmic desert under an aurora sky"
+  - "a cloud chamber with floating crystal staircases"
+  - "a prism-lit ceremonial hall with silver drapery"
+
+motif_clusters:
+  crystal_temple:
+    - "crystal clusters"
+    - "mirrored pillars"
+    - "reflective floor"
+    - "prism light"
+  moon_garden:
+    - "glowing moss"
+    - "pastel mushrooms"
+    - "moon disc"
+    - "reflective pool"
+  cosmic_initiation:
+    - "portal"
+    - "staircase"
+    - "aura rings"
+    - "silver robes"
+  glam_ecology:
+    - "jewel-toned mushrooms"
+    - "velvet moss"
+    - "crystal dew"
+    - "butterflies"
+
+lighting_modes:
+  - "halo backlight through mist"
+  - "moonlit lavender haze"
+  - "candy-colored aura spill"
+  - "rainbow prism scatter"
+  - "lemon-white edge glow"
+  - "portal light spilling into fog"
+
+palette_families:
+  pink_glamour:
+    - "bubblegum pink"
+    - "hot magenta"
+    - "pearl white"
+    - "silver"
+  violet_dream:
+    - "lavender"
+    - "orchid"
+    - "moon silver"
+    - "opal white"
+  teal_energy:
+    - "aqua"
+    - "turquoise"
+    - "mint"
+    - "silver-white"
+  rainbow_prism:
+    - "hot pink"
+    - "lavender"
+    - "teal"
+    - "lemon"
+    - "pearl"
+
+analog_levels:
+  level_1: "light bloom, subtle chroma softness, faint texture"
+  level_2: "visible VHS softness, moderate bloom, light scanlines, color bleed"
+  level_3: "obvious tape blur, strong bloom, visible scan texture, signal noise"
+
+format_cues:
+  - "composed like a lost metaphysical paperback cover"
+  - "framed as an 80s fantasy film still"
+  - "symmetrical devotional icon composition"
+  - "center-framed glam oracle portrait"
+  - "wide cinematic moon temple scene"
+  - "VHS-soft music-video frame"

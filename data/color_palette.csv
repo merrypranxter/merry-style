@@ -1,0 +1,31 @@
+color_name,category,hex_code,rgb_values,usage_priority,emotional_association,common_pairings
+bubblegum pink,pink,#FF69B4,"255,105,180",high,playful glamour,pearl white;silver;teal
+hot pink,pink,#FF1493,"255,20,147",high,beauty intensity,aqua;violet;lemon
+blush pink,pink,#FFB6C1,"255,182,193",medium,soft femininity,lavender;champagne
+magenta,pink,#FF00FF,"255,0,255",high,electric glamour,turquoise;opal white
+coral-pink,pink,#F88379,"248,131,121",medium,warm romance,violet;mint
+lavender,purple,#E6E6FA,"230,230,250",high,dream transcendence,aqua;lemon;pearl
+lilac,purple,#C8A2C8,"200,162,200",medium,gentle mystery,silver;peach
+orchid,purple,#DA70D6,"218,112,214",high,mystical depth,teal;lemon white
+violet,purple,#8B00FF,"139,0,255",high,psychic power,aqua;champagne
+neon lilac,purple,#EE82EE,"238,130,238",medium,ethereal glow,pearl;mint
+teal,blue,#008080,"0,128,128",high,refraction magic,pink;lemon;orchid
+aqua,blue,#00FFFF,"0,255,255",high,fresh magic,magenta;lavender;pearl
+turquoise,blue,#40E0D0,"64,224,208",high,cosmic energy,hot pink;violet
+seafoam,blue,#93E9BE,"147,233,190",medium,soft renewal,pink;lavender
+icy cyan,blue,#E0FFFF,"224,255,255",medium,ethereal coolness,orchid;pearl
+mint,green,#98FF98,"152,255,152",medium,playful freshness,coral;lilac
+lemon yellow,yellow,#FFF44F,"255,244,79",high,radiant blessing,orchid;teal;pearl
+pastel yellow,yellow,#FFFFE0,"255,255,224",low,gentle warmth,lavender;silver
+peach,yellow,#FFDAB9,"255,218,185",medium,soft optimism,violet;aqua
+apricot glow,yellow,#FFBF7F,"255,191,127",low,warm radiance,orchid;teal
+champagne,yellow,#F7E7CE,"247,231,206",medium,luxury softness,pink;violet
+pale gold,yellow,#E6BE8A,"230,190,138",low,divine richness,lavender;pearl
+pearl white,neutral,#F0EAD6,"240,234,214",high,purity base,all colors
+opal white,neutral,#F0F8FF,"240,248,255",high,iridescent base,pink;violet;aqua
+moon silver,neutral,#C0C0C0,"192,192,192",high,lunar elegance,pastel family
+cloud white,neutral,#F5F5F5,"245,245,245",medium,airy softness,pink;lavender
+cream haze,neutral,#FFFDD0,"255,253,208",low,vintage warmth,peach;lilac
+smoky mauve,neutral,#915F6D,"145,95,109",low,muted depth,pearl;lemon
+midnight violet,neutral,#191970,"25,25,112",low,deep contrast,pearl;hot pink
+reflective black,neutral,#0A0A0A,"10,10,10",high,mirror depth,all bright colors
