@@ -1,0 +1,236 @@
+{
+  "style": {
+    "name": "New Age Glam Fantasy",
+    "short_tag": "NAGF",
+    "version": "1.0.0",
+    "era": "1978-1986",
+    "description": "A retro-mystical visual style merging late-1970s to mid-1980s metaphysical paperback illustration, glam fantasy cinema, soft-focus beauty imagery, prismatic pastel-neon color, and analog media decay into visions of cosmic transcendence.",
+    "style_lock_line": "Style: New Age Glam Fantasy — 1978–1986 metaphysical glam sci-fantasy, diffusion bloom/halation, prismatic pastels, VHS/CRT artifacts, analog film wear.",
+    "five_words": ["mystical", "glamorous", "cosmic", "analog", "prismatic"],
+    "compressed_formula": "symbol + glamour + glow + prism + artifact + transcendence"
+  },
+  "pillars": [
+    {
+      "id": 1,
+      "name": "Mystical Metaphysical Imagery",
+      "function": "purpose",
+      "required": true,
+      "elements": ["crystals", "moons", "portals", "temples", "auras", "veils", "sacred geometry", "divine light"]
+    },
+    {
+      "id": 2,
+      "name": "Glamour Language",
+      "function": "seduction",
+      "required": true,
+      "elements": ["satin", "silk", "lamé", "jewelry", "styled hair", "dramatic makeup", "elegant posing", "cinematic beauty lighting"]
+    },
+    {
+      "id": 3,
+      "name": "Soft Optical Diffusion",
+      "function": "dream-state",
+      "required": true,
+      "elements": ["halation", "bloom", "haze", "mist", "pearlescent highlights", "lens softness", "dreamlike focus"]
+    },
+    {
+      "id": 4,
+      "name": "Prismatic Color",
+      "function": "aura",
+      "required": true,
+      "elements": ["pink", "lavender", "cyan", "opal", "pearl", "rainbow refraction", "spectral flare"]
+    },
+    {
+      "id": 5,
+      "name": "Analog Wear",
+      "function": "memory",
+      "required": true,
+      "elements": ["VHS softness", "CRT scanlines", "chroma bleed", "color drift", "print fade", "tape noise"]
+    },
+    {
+      "id": 6,
+      "name": "Cosmic Environments",
+      "function": "space",
+      "required": false,
+      "elements": ["star fields", "cloud chambers", "reflective black water", "aurora sky", "mirrored voids", "glowing interiors"]
+    },
+    {
+      "id": 7,
+      "name": "Emotional Transcendence",
+      "function": "sincerity",
+      "required": true,
+      "elements": ["initiation", "enchantment", "sacred glamour", "destiny", "visionary romance", "cosmic yearning"]
+    }
+  ],
+  "color_palette": {
+    "primary_hues": [
+      { "name": "hot pink", "hex": "#FF1493", "rgb": [255, 20, 147], "priority": "high" },
+      { "name": "bubblegum pink", "hex": "#FF69B4", "rgb": [255, 105, 180], "priority": "high" },
+      { "name": "blush pink", "hex": "#FFB6C1", "rgb": [255, 182, 193], "priority": "medium" },
+      { "name": "magenta", "hex": "#FF00FF", "rgb": [255, 0, 255], "priority": "high" },
+      { "name": "coral-pink", "hex": "#F88379", "rgb": [248, 131, 121], "priority": "medium" },
+      { "name": "lavender", "hex": "#E6E6FA", "rgb": [230, 230, 250], "priority": "high" },
+      { "name": "orchid", "hex": "#DA70D6", "rgb": [218, 112, 214], "priority": "high" },
+      { "name": "violet", "hex": "#8B00FF", "rgb": [139, 0, 255], "priority": "high" },
+      { "name": "lilac", "hex": "#C8A2C8", "rgb": [200, 162, 200], "priority": "medium" },
+      { "name": "teal", "hex": "#008080", "rgb": [0, 128, 128], "priority": "high" },
+      { "name": "aqua", "hex": "#00FFFF", "rgb": [0, 255, 255], "priority": "high" },
+      { "name": "turquoise", "hex": "#40E0D0", "rgb": [64, 224, 208], "priority": "high" },
+      { "name": "seafoam", "hex": "#93E9BE", "rgb": [147, 233, 190], "priority": "medium" },
+      { "name": "mint", "hex": "#98FF98", "rgb": [152, 255, 152], "priority": "medium" },
+      { "name": "lemon yellow", "hex": "#FFF44F", "rgb": [255, 244, 79], "priority": "high" },
+      { "name": "peach", "hex": "#FFDAB9", "rgb": [255, 218, 185], "priority": "medium" },
+      { "name": "champagne", "hex": "#F7E7CE", "rgb": [247, 231, 206], "priority": "medium" }
+    ],
+    "neutrals": [
+      { "name": "pearl white", "hex": "#F0EAD6", "rgb": [240, 234, 214], "priority": "high" },
+      { "name": "opal white", "hex": "#F0F8FF", "rgb": [240, 248, 255], "priority": "high" },
+      { "name": "moon silver", "hex": "#C0C0C0", "rgb": [192, 192, 192], "priority": "high" },
+      { "name": "reflective black", "hex": "#0A0A0A", "rgb": [10, 10, 10], "priority": "high" },
+      { "name": "midnight violet", "hex": "#191970", "rgb": [25, 25, 112], "priority": "low" }
+    ],
+    "default_palette": ["bubblegum pink", "hot magenta", "lavender", "orchid", "aqua", "turquoise", "lemon yellow", "pearl white", "moon silver"],
+    "shorthand": "Lisa Frank rainbow glamour softened by mist, crystal refraction, satin reflection, and VHS bloom"
+  },
+  "dna_strands": {
+    "temporal": {
+      "era": "1978-1986",
+      "description": "Late 70s to mid 80s metaphysical glam visual world",
+      "prompt_cues": ["1978–1986 glam sci-fantasy", "lost VHS fantasy special", "vintage spiritual self-help cover art", "retro analog cosmic glamour", "faded paperback illustration finish"]
+    },
+    "symbolic": {
+      "categories": ["celestial", "initiatory", "energetic", "devotional", "feminine-mythic"],
+      "prompt_cues": ["cosmic initiation", "sacred glamour ritual", "oracle chamber", "moonlit ascension", "luminous psychic temple"]
+    },
+    "glamour": {
+      "components": ["styled hair", "polished makeup", "satin/silk/lamé", "sculptural jewelry", "elegant gesture", "beauty lighting"],
+      "prompt_cues": ["cosmic glamour portrait", "oracle beauty styling", "satin ceremonial fashion", "divine feminine icon framing"]
+    },
+    "optical": {
+      "traits": ["halation", "soft-focus diffusion", "bloom", "haze", "pearlescent clipping", "prism flare"],
+      "prompt_cues": ["heavy diffusion bloom", "dreamy halation", "glowing lens softness", "pearlescent overexposure", "romantic analog diffusion"]
+    },
+    "color": {
+      "system": "prismatic pastel-neon opalescent",
+      "prompt_cues": ["opalescent pastel-neon palette", "aurora pink and cyan atmosphere", "rainbow prism refractions", "pastel spectral color drift"]
+    },
+    "material": {
+      "refractive": ["crystal", "glass", "prisms"],
+      "reflective": ["mirrors", "still water", "polished metal"],
+      "diffusive": ["fog", "chiffon", "haze"],
+      "glam": ["satin", "jewelry", "sequins", "metallic textiles"]
+    },
+    "media": {
+      "artifacts": ["VHS softness", "CRT scanlines", "chroma bleed", "tape noise", "print fade", "bloom clipping"],
+      "prompt_cues": ["light VHS degradation", "soft CRT texture", "analog tape softness", "faded paperback print finish", "dreamy generational copy loss"]
+    },
+    "emotional": {
+      "states": ["awakening", "enchantment", "sacred glamour", "longing", "spiritual destiny", "visionary romance", "cosmic solitude", "ecstatic calm"],
+      "prompt_cues": ["transcendent and devotional", "dreamy sacred longing", "romantic cosmic initiation", "mystical glamour and wonder"]
+    }
+  },
+  "motifs": {
+    "crystalline": ["crystals", "prisms", "opal", "quartz"],
+    "reflection": ["mirrors", "reflective water"],
+    "celestial": ["moon discs", "stars", "portals", "pyramids"],
+    "initiatory": ["portals", "pyramids", "temples"],
+    "devotional": ["veils", "halos", "crowns"],
+    "textile": ["satin", "silk", "chiffon"],
+    "organic": ["mushrooms", "moss", "butterflies"],
+    "creature": ["swans", "doves", "white horses"]
+  },
+  "lighting_modes": [
+    {
+      "name": "halo_backlight",
+      "prompt": "radiant halo backlight through mist",
+      "emotion": "transcendence, sanctification"
+    },
+    {
+      "name": "prism_scatter",
+      "prompt": "rainbow prism light scattering across the frame",
+      "emotion": "enchantment, magic, luxury"
+    },
+    {
+      "name": "moonlit_diffusion",
+      "prompt": "moonlit lavender haze",
+      "emotion": "tenderness, dream-state, psychic stillness"
+    },
+    {
+      "name": "candy_glamour",
+      "prompt": "candy-colored aura lighting",
+      "emotion": "joy, beauty spectacle, pop mysticism"
+    },
+    {
+      "name": "temple_threshold",
+      "prompt": "portal light spilling into fog",
+      "emotion": "initiation, destiny, revelation"
+    },
+    {
+      "name": "reflective_water",
+      "prompt": "reflective black water catching pink and violet glow",
+      "emotion": "infinity, dream logic, metaphysical depth"
+    }
+  ],
+  "analog_levels": {
+    "1": {
+      "name": "whispered_age",
+      "description": "Slight bloom, minor chroma softness, faint CRT or print texture",
+      "best_for": "portraits, elegant editorial",
+      "prompt": "slight bloom, faint CRT texture, subtle softness"
+    },
+    "2": {
+      "name": "clear_analog_memory",
+      "description": "Visible VHS softness, moderate bloom, light scanline, color bleed",
+      "best_for": "most default work, paperback covers, temple scenes",
+      "prompt": "VHS softness, chroma bleed, light scanlines, moderate bloom"
+    },
+    "3": {
+      "name": "heavy_relic_mode",
+      "description": "Obvious tape blur, strong bloom, visible scan texture, signal noise",
+      "best_for": "explicit VHS references, lost broadcast aesthetics",
+      "prompt": "heavy tape blur, strong bloom, visible scan texture, signal noise"
+    }
+  },
+  "format_cues": [
+    "composed like a lost metaphysical paperback cover",
+    "framed as an 80s fantasy film still",
+    "symmetrical devotional icon composition",
+    "center-framed glam oracle portrait",
+    "wide cinematic moon temple scene",
+    "VHS-soft music-video frame"
+  ],
+  "style_boundaries": {
+    "must_be_present": ["mystical significance", "glamour delivery", "soft optical atmosphere", "opalescent prismatic color", "analog media feeling", "earnest visionary tone"],
+    "outside_the_style": ["cyberpunk", "horror occultism", "gritty epic fantasy", "brutalist sci-fi", "clean minimalist surrealism", "hard CGI futurism", "ironic meme fantasy", "generic celestial AI wallpaper"],
+    "drift_risks": ["synthwave", "vaporwave", "dark fantasy", "modern celestial editorial", "spiritual bohemian", "camp retro fantasy"],
+    "red_flag_vocabulary": ["cyberpunk", "noir", "tactical", "dystopian", "brutalist", "hyperreal", "ultra sharp", "hard-edged", "datamosh", "industrial", "streetwear", "demonic"],
+    "green_flag_vocabulary": ["metaphysical", "visionary", "prismatic", "opalescent", "moonlit", "mirrored", "ceremonial", "oracle", "satin", "veiled", "luminous", "diffusion", "halation", "crystal", "aura", "VHS-soft"]
+  },
+  "negative_prompts": {
+    "core": "cyberpunk, urban neon, city streets, dark occult, demonic, horror, blood, gore, medieval armor, swords, battle, hyperrealistic, ultra sharp, clean CGI, modern editorial, vaporwave irony, datamosh, harsh shadows, primary red, earthy brown, industrial, dystopian",
+    "by_category": {
+      "cyberpunk_block": "cyberpunk, urban neon, city streets, rainy alley, neon signage, megacity, holographic advertisement, leather jacket, industrial, dystopian, wires, implants",
+      "synthwave_block": "synthwave, outrun, grid, purple-black sunset, car, highway, electronic music poster",
+      "horror_block": "dark occult, demonic, horror, blood, gore, skulls, bones, decay, dread, menace",
+      "medieval_block": "medieval armor, swords, battle, warrior, castle, dragon, dungeon",
+      "modern_digital_block": "hyperrealistic, ultra sharp, clean CGI, sterile white studio, modern luxury editorial",
+      "vaporwave_block": "vaporwave collage, Japanese text, Greek statue, checkerboard grid, ironic nostalgia",
+      "earthy_block": "linen, canvas, earth tones, khaki, brown rustic, natural fibers, desert realism",
+      "generic_ethereal_block": "generic celestial, vague sparkle, random stars, over-polished symmetry, lifeless ethereal glow"
+    }
+  },
+  "prompt_examples": {
+    "short": "A cosmic priestess in a mirrored crystal temple above reflective black water, glowing mushrooms and crystal clusters, halo backlight through mist, soft diffusion bloom, hot pink violet aqua palette, subtle VHS softness, composed as a lost metaphysical paperback cover. Style: New Age Glam Fantasy — 1978–1986 metaphysical glam sci-fantasy, diffusion bloom/halation, prismatic pastels, VHS/CRT artifacts, analog film wear.",
+    "medium": "A radiant oracle with long wild pink curly hair standing in a mirrored crystal temple above reflective black water, surrounded by glowing mushrooms and crystal clusters and drifting prism flares, wearing an orchid satin gown with silver jewelry and chiffon veils, lit by halo backlight through lavender and teal haze, soft-focus glam optics with prismatic lens flare, hot pink violet aqua lemon and pearl palette, faint CRT texture and chroma bleed, evoking sacred glamour and cosmic initiation, composed as a lost metaphysical paperback cover. Style: New Age Glam Fantasy — 1978–1986 metaphysical glam sci-fantasy, diffusion bloom/halation, prismatic pastels, VHS/CRT artifacts, analog film wear.",
+    "long": "A luminous oracle with long wild pink curly hair stands barefoot on a ceremonial mirrored platform above reflective black water inside a vast crystal moon temple, surrounded by giant quartz clusters, pastel glowing mushrooms, velvet moss, floating jewel-toned butterflies, and soft fractal aura patterns radiating behind her, wearing a flowing hot pink and orchid satin gown with silver lamé trim, chiffon veils, crystal rings, satin gloves, glossy lips, frosted lavender eyeshadow, and a jeweled moon-crown headpiece, lit by radiant halo backlight and candy-colored prism spill in teal, aqua, violet, and lemon glow, rendered with heavy diffusion bloom, dreamy halation, mist-filled air, and pearlescent highlight rolloff, in a Lisa Frank–adjacent high-chroma cosmic palette of bubblegum pink, magenta, orchid, turquoise, mint, lemon, pearl white, and silver, with subtle VHS softness, chroma bleed, faded print wear, and faint CRT scanline texture, evoking sacred beauty, visionary longing, and glamorous spiritual initiation, composed as a center-framed lost metaphysical paperback cover from an obscure 1983 fantasy media universe. Style: New Age Glam Fantasy — 1978–1986 metaphysical glam sci-fantasy, diffusion bloom/halation, prismatic pastels, VHS/CRT artifacts, analog film wear."
+  },
+  "data_files": {
+    "color_palette_csv": "data/color_palette.csv",
+    "motifs_csv": "data/motifs.csv",
+    "prompt_templates_yaml": "data/prompt_templates.yaml",
+    "style_comparison_csv": "data/style_comparison.csv",
+    "style_json": "data/style.json",
+    "shader_params_json": "data/shader-params.json",
+    "negative_prompts_json": "data/negative-prompts.json",
+    "ai_context_md": "data/ai-context.md"
+  },
+  "license": "CC BY-NC 4.0"
+}
