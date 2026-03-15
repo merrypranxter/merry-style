@@ -51,6 +51,10 @@ This repository is for:
 - motion designers
 - photographers
 - editors and colorists
+- shader and GLSL developers
+- TouchDesigner and generative art creators
+- app developers building AI art tools
+- vibecoding artists integrating style systems
 - people building visual style systems
 - researchers archiving obscure retro spiritual / glam fantasy aesthetics
 
@@ -125,7 +129,7 @@ The style requires the **coexistence** of mysticism, glamour, cosmic symbolism, 
 ```text
 00_OVERVIEW/                Plain-language definition, FAQ, quick start
 01_STYLE_FOUNDATIONS/       Core theory, aesthetic DNA, emotional logic, boundaries
-02_VISUAL_COMPONENTS/       Color, light, optics, texture, artifacts, costume, typography
+02_VISUAL_COMPONENTS/       Color, light, optics, texture, artifacts
 03_MOTIF_LIBRARY/           Symbolic motifs and recurring visual objects
 04_COMPARATIVE_REFERENCE/   Adjacent styles, anti-references, influence maps
 05_PROMPT_ENGINEERING/      Prompt formulas, templates, variants, troubleshooting
@@ -134,7 +138,7 @@ The style requires the **coexistence** of mysticism, glamour, cosmic symbolism, 
 08_TEMPLATES/               Reusable templates for entries and prompt design
 09_SOURCES/                 Bibliography, films, books, archives, essays, links
 assets/                     Palettes, diagrams, scans, stills, banners, visual aids
-data/                       CSV, YAML, and structured data files
+data/                       CSV, YAML, JSON structured data files for AI and app integration
 ```
 
 ---
@@ -161,14 +165,14 @@ Use the workflow and post-processing sections to reproduce the texture and finis
 
 If you're new, start here:
 
-1. 00_OVERVIEW/core-definition.md
-2. 01_STYLE_FOUNDATIONS/aesthetic-dna.md
-3. 01_STYLE_FOUNDATIONS/style-boundaries.md
-4. 02_VISUAL_COMPONENTS/color-palette.md
-5. 02_VISUAL_COMPONENTS/lighting.md
-6. 02_VISUAL_COMPONENTS/analog-artifacts.md
-7. 03_MOTIF_LIBRARY/crystals.md
-8. 05_PROMPT_ENGINEERING/prompt-anatomy.md
+1. `00_OVERVIEW/core-definition.md`
+2. `01_STYLE_FOUNDATIONS/aesthetic-dna.md`
+3. `01_STYLE_FOUNDATIONS/style-boundaries.md`
+4. `02_VISUAL_COMPONENTS/color-palette.md`
+5. `02_VISUAL_COMPONENTS/lighting.md`
+6. `02_VISUAL_COMPONENTS/analog-artifacts.md`
+7. `03_MOTIF_LIBRARY/crystals.md`
+8. `05_PROMPT_ENGINEERING/prompt-anatomy.md`
 
 ---
 
@@ -297,9 +301,46 @@ Under the following terms:
 
 ## Data Files
 
-This repository includes structured data files in the `data/` directory:
+This repository includes structured data files in the `data/` directory for programmatic and AI/app integration:
 
-- `color_palette.csv` - Complete color system with hex codes
-- `motifs.csv` - Motif library with categories and properties
-- `prompt_templates.yaml` - Reusable prompt templates
-- `style_comparison.csv` - Adjacent styles comparison matrix
+| File | Format | Purpose |
+|------|--------|---------|
+| `color_palette.csv` | CSV | Complete color system with hex codes, RGB values, usage priority |
+| `motifs.csv` | CSV | Motif library with categories, symbolism, and prompt phrases |
+| `prompt_templates.yaml` | YAML | Reusable prompt templates with variables and examples |
+| `style_comparison.csv` | CSV | Adjacent styles comparison matrix with drift risk ratings |
+| `style.json` | JSON | **Complete machine-readable style spec** — pillars, DNA, palette, motifs, prompts, boundaries |
+| `shader-params.json` | JSON | **GLSL/WebGL shader parameters** — bloom, halation, VHS, chroma, CRT, grain, color grading |
+| `negative-prompts.json` | JSON | **Structured negative prompt library** by platform and drift category |
+| `ai-context.md` | Markdown | **AI model system prompt** — load as context for ChatGPT, Claude, local LLMs |
+
+---
+
+## AI and App Integration
+
+### Loading this style into an AI model
+
+Use `data/ai-context.md` as a system prompt or context document for any AI assistant. This gives the model working knowledge of the style's pillars, palette, vocabulary, and prompt construction.
+
+### Building prompts programmatically
+
+The `data/prompt_templates.yaml` and `data/style.json` files expose all style variables in structured formats suitable for:
+- Template engines
+- RAG systems
+- Prompt builders
+- App integrations
+
+### Using shader parameters
+
+Load `data/shader-params.json` into your shader app or GLSL pipeline. The file includes:
+- Normalized RGB values for all palette colors (GPU-ready)
+- Bloom, halation, VHS, chroma, CRT, grain, and diffusion parameters
+- Three intensity presets (Level 1 whispered / Level 2 default / Level 3 heavy relic)
+- Named GLSL uniform variables
+- Post-processing recipes for Photoshop, After Effects, DaVinci Resolve, TouchDesigner
+
+### Negative prompts for your pipeline
+
+Load `data/negative-prompts.json` for structured drift-prevention blocks organized by:
+- Platform format (Midjourney, Stable Diffusion, DALL-E, ComfyUI)
+- Drift category (cyberpunk, synthwave, horror, medieval, modern-digital, vaporwave, earthy, generic-ethereal, glitch)

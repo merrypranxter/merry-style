@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "style": "New Age Glam Fantasy",
+    "version": "1.0.0",
+    "description": "GLSL/WebGL shader parameters for recreating the New Age Glam Fantasy aesthetic. Values are normalized (0.0–1.0) unless otherwise noted.",
+    "usage": "Load these parameters into your shader app, GLSL uniforms, or post-processing pipeline. Each section corresponds to a distinct visual effect layer."
+  },
+  "color_palette": {
+    "description": "Core palette as normalized RGB for GPU uniforms",
+    "swatches": [
+      { "name": "hot_pink",       "hex": "#FF1493", "rgb_norm": [1.000, 0.078, 0.576], "role": "primary_accent" },
+      { "name": "bubblegum_pink", "hex": "#FF69B4", "rgb_norm": [1.000, 0.412, 0.706], "role": "primary_dominant" },
+      { "name": "blush_pink",     "hex": "#FFB6C1", "rgb_norm": [1.000, 0.714, 0.757], "role": "atmosphere_soft" },
+      { "name": "magenta",        "hex": "#FF00FF", "rgb_norm": [1.000, 0.000, 1.000], "role": "electric_accent" },
+      { "name": "lavender",       "hex": "#E6E6FA", "rgb_norm": [0.902, 0.902, 0.980], "role": "atmosphere_cool" },
+      { "name": "orchid",         "hex": "#DA70D6", "rgb_norm": [0.855, 0.439, 0.839], "role": "mid_depth" },
+      { "name": "violet",         "hex": "#8B00FF", "rgb_norm": [0.545, 0.000, 1.000], "role": "deep_accent" },
+      { "name": "teal",           "hex": "#008080", "rgb_norm": [0.000, 0.502, 0.502], "role": "contrast_cool" },
+      { "name": "aqua",           "hex": "#00FFFF", "rgb_norm": [0.000, 1.000, 1.000], "role": "bright_cool_accent" },
+      { "name": "turquoise",      "hex": "#40E0D0", "rgb_norm": [0.251, 0.878, 0.816], "role": "mid_cool" },
+      { "name": "mint",           "hex": "#98FF98", "rgb_norm": [0.596, 1.000, 0.596], "role": "fresh_accent" },
+      { "name": "lemon_yellow",   "hex": "#FFF44F", "rgb_norm": [1.000, 0.957, 0.310], "role": "halo_glow" },
+      { "name": "peach",          "hex": "#FFDAB9", "rgb_norm": [1.000, 0.855, 0.725], "role": "warm_soft" },
+      { "name": "champagne",      "hex": "#F7E7CE", "rgb_norm": [0.969, 0.906, 0.808], "role": "warm_neutral" },
+      { "name": "pearl_white",    "hex": "#F0EAD6", "rgb_norm": [0.941, 0.918, 0.839], "role": "neutral_base" },
+      { "name": "opal_white",     "hex": "#F0F8FF", "rgb_norm": [0.941, 0.973, 1.000], "role": "cool_neutral_base" },
+      { "name": "moon_silver",    "hex": "#C0C0C0", "rgb_norm": [0.753, 0.753, 0.753], "role": "metallic_neutral" },
+      { "name": "reflective_black","hex": "#0A0A0A","rgb_norm": [0.039, 0.039, 0.039], "role": "deep_mirror" }
+    ]
+  },
+  "color_grading": {
+    "description": "LUT-style color grading parameters. Apply as color matrix or curves in post.",
+    "lift": { "r": 0.02, "g": 0.01, "b": 0.05, "description": "Slight violet lift in shadows" },
+    "gamma": { "r": 1.05, "g": 0.98, "b": 1.10, "description": "Cool pink-violet midtone shift" },
+    "gain": { "r": 1.10, "g": 0.95, "b": 1.15, "description": "Pink/blue highlight boost" },
+    "saturation_boost": 1.20,
+    "hue_rotation_degrees": 5,
+    "hue_rotation_note": "Slight rotation toward magenta-cyan axis",
+    "vibrance": 0.15,
+    "temperature_kelvin": 5800,
+    "temperature_note": "Slightly cool; push toward 5500K for warmer VHS feel",
+    "tint": 8,
+    "tint_note": "Slight magenta tint push"
+  },
+  "bloom": {
+    "description": "Bloom/glow post-processing parameters",
+    "enabled": true,
+    "intensity": 0.65,
+    "threshold": 0.72,
+    "radius": 8.0,
+    "iterations": 6,
+    "color_tint": [1.0, 0.85, 0.95],
+    "color_tint_note": "Slight warm-pink bloom tint",
+    "scatter": 0.80,
+    "knee": 0.15,
+    "note": "Heavy bloom is characteristic. Do not reduce below 0.40 intensity for on-model results."
+  },
+  "halation": {
+    "description": "Film halation — glow around bright areas bleeding into surroundings",
+    "enabled": true,
+    "intensity": 0.45,
+    "radius": 12.0,
+    "color": [1.0, 0.5, 0.7],
+    "color_note": "Pink-warm halation (simulates film backing scatter)",
+    "threshold": 0.60
+  },
+  "vhs_softness": {
+    "description": "VHS tape blur/softness simulation",
+    "enabled": true,
+    "horizontal_blur": 1.8,
+    "vertical_blur": 0.4,
+    "horizontal_blur_note": "VHS is predominantly horizontal",
+    "resolution_reduction": 0.88,
+    "edge_softness": 0.25,
+    "luminance_softness": 0.30,
+    "chroma_softness": 0.50,
+    "chroma_softness_note": "Chroma channels blur more than luma in VHS"
+  },
+  "chroma_bleed": {
+    "description": "Analog color channel misregistration and bleed",
+    "enabled": true,
+    "r_offset_x": 1.5,
+    "r_offset_y": 0.2,
+    "b_offset_x": -1.2,
+    "b_offset_y": -0.1,
+    "bleed_intensity": 0.35,
+    "edge_only": true,
+    "edge_only_note": "Apply strongest bleed at high-contrast edges",
+    "dominant_bleed_colors": ["magenta", "cyan"],
+    "dominant_bleed_colors_note": "Magenta bleeds into adjacent areas, cyan fringes on opposing edges"
+  },
+  "crt_scanlines": {
+    "description": "CRT display scanline texture",
+    "enabled": true,
+    "intensity": 0.12,
+    "line_frequency": 480,
+    "line_frequency_note": "480i equivalent scanline frequency",
+    "softness": 0.7,
+    "phosphor_glow": 0.08,
+    "mask_type": "slot",
+    "mask_type_options": ["slot", "aperture_grille", "shadow_mask"],
+    "curvature": 0.015,
+    "curvature_note": "Very subtle screen curve. Increase to 0.05 for heavier CRT feel."
+  },
+  "film_grain": {
+    "description": "Fine analog film grain",
+    "enabled": true,
+    "intensity": 0.08,
+    "size": 1.0,
+    "luma_only": false,
+    "animated": true,
+    "animation_speed": 24,
+    "animation_speed_note": "Frame rate for grain animation if applied to video"
+  },
+  "diffusion": {
+    "description": "Optical diffusion filter simulation (Pro-Mist / Glimmerglass style)",
+    "enabled": true,
+    "strength": 0.35,
+    "highlight_spread": 0.50,
+    "shadow_preservation": 0.80,
+    "warmth": 0.10,
+    "note": "Diffusion should feel like shooting through a net or fog filter, not plain blur"
+  },
+  "lens_distortion": {
+    "description": "Slight barrel distortion for vintage lens feel",
+    "enabled": false,
+    "enabled_note": "Disable for most work. Enable only for heavy vintage lens look.",
+    "barrel_k1": 0.02,
+    "barrel_k2": 0.005,
+    "chromatic_fringe": 0.008
+  },
+  "vignette": {
+    "description": "Soft edge darkening",
+    "enabled": true,
+    "intensity": 0.25,
+    "radius": 0.75,
+    "softness": 0.60,
+    "color": [0.05, 0.00, 0.08],
+    "color_note": "Very dark violet vignette rather than pure black"
+  },
+  "color_aberration": {
+    "description": "Prismatic color fringing on high-contrast edges",
+    "enabled": true,
+    "r_shift": [1.002, 0.0],
+    "b_shift": [-1.002, 0.0],
+    "intensity": 0.20,
+    "edge_only": true
+  },
+  "analog_fade": {
+    "description": "Faded print / aged media overall tone shift",
+    "enabled": true,
+    "fade_amount": 0.12,
+    "fade_color": [0.95, 0.90, 1.00],
+    "fade_color_note": "Fade toward lavender-white, not plain white",
+    "contrast_reduction": 0.08
+  },
+  "intensity_presets": {
+    "level_1_whispered": {
+      "description": "Subtle — elegant portraits, cleaner glamour scenes",
+      "bloom_intensity": 0.35,
+      "vhs_horizontal_blur": 0.8,
+      "chroma_bleed_intensity": 0.15,
+      "crt_intensity": 0.05,
+      "film_grain_intensity": 0.04,
+      "diffusion_strength": 0.20,
+      "analog_fade_amount": 0.06
+    },
+    "level_2_clear_memory": {
+      "description": "Default — most New Age Glam Fantasy work",
+      "bloom_intensity": 0.65,
+      "vhs_horizontal_blur": 1.8,
+      "chroma_bleed_intensity": 0.35,
+      "crt_intensity": 0.12,
+      "film_grain_intensity": 0.08,
+      "diffusion_strength": 0.35,
+      "analog_fade_amount": 0.12
+    },
+    "level_3_heavy_relic": {
+      "description": "Heavy — explicit VHS / lost media / degraded archive",
+      "bloom_intensity": 0.90,
+      "vhs_horizontal_blur": 3.5,
+      "chroma_bleed_intensity": 0.60,
+      "crt_intensity": 0.25,
+      "film_grain_intensity": 0.18,
+      "diffusion_strength": 0.55,
+      "analog_fade_amount": 0.22
+    }
+  },
+  "glsl_uniforms": {
+    "description": "GLSL uniform variable names for integration into shader code",
+    "u_bloom_intensity": "float — bloom strength (0.0 to 1.0)",
+    "u_bloom_threshold": "float — luma threshold for bloom (0.0 to 1.0)",
+    "u_bloom_radius": "float — bloom spread radius in pixels",
+    "u_vhs_blur_h": "float — horizontal VHS blur amount",
+    "u_vhs_blur_v": "float — vertical VHS blur amount",
+    "u_chroma_r_offset": "vec2 — red channel offset in pixels",
+    "u_chroma_b_offset": "vec2 — blue channel offset in pixels",
+    "u_chroma_intensity": "float — chroma bleed intensity",
+    "u_crt_lines": "float — CRT scanline intensity",
+    "u_crt_freq": "float — scanline frequency",
+    "u_grain_intensity": "float — film grain intensity",
+    "u_grain_time": "float — time uniform for animated grain",
+    "u_diffusion_strength": "float — diffusion/soft-focus amount",
+    "u_halation_intensity": "float — halation glow amount",
+    "u_halation_radius": "float — halation spread radius",
+    "u_halation_color": "vec3 — halation tint color (normalized RGB)",
+    "u_vignette_intensity": "float — vignette darkness",
+    "u_vignette_radius": "float — vignette start radius (0.0 to 1.0)",
+    "u_lift": "vec3 — shadow lift RGB",
+    "u_gamma": "vec3 — midtone gamma RGB",
+    "u_gain": "vec3 — highlight gain RGB",
+    "u_saturation": "float — overall saturation multiplier",
+    "u_fade_amount": "float — analog fade/print age intensity",
+    "u_fade_color": "vec3 — fade target color (normalized RGB)",
+    "u_resolution": "vec2 — output resolution in pixels",
+    "u_time": "float — time in seconds for animated effects"
+  },
+  "post_processing_tools": {
+    "photoshop": {
+      "steps": [
+        "Add Curves adjustment: lift shadows slightly toward violet, boost pink/blue highlights",
+        "Add Lens Blur (5–12px) on luminance channel for diffusion",
+        "Apply VHS horizontal motion blur (Smart Sharpen > Lens Blur, horizontal)",
+        "Add Gradient Map overlay at 15–25% opacity using pink→violet→teal gradient",
+        "Add Noise overlay at 4–8% for grain",
+        "Screen-mode glow layer: Gaussian blur copy at 30–40% opacity",
+        "Add slight chroma aberration via Channel offset (R: +1-2px, B: -1-2px)"
+      ]
+    },
+    "after_effects": {
+      "effects": ["CC Blobbylize (for bloom)", "VHS effect plugins (Video Copilot, Magic Bullet Frames)", "Glow (Threshold: 70%, Radius: 8–15)", "Channel Blur (for chroma)", "Noise HLS Auto (for grain)"]
+    },
+    "davinci_resolve": {
+      "nodes": [
+        "Color Warper: push shadows to violet, highlights to pink/blue",
+        "Blur node: 2–4px soft blur",
+        "Glow: Amount 0.3–0.6, Spread 8–15",
+        "Film Grain: Fine grain at 10–20% intensity",
+        "Halation: Resolve Color Science halation setting"
+      ]
+    },
+    "touchdesigner": {
+      "operators": ["Blur TOP (separate H/V channels)", "Feedback TOP for bloom accumulation", "GLSL TOP for custom chroma and scanline", "Level TOP for color grading", "Noise TOP for grain"]
+    }
+  }
+}
